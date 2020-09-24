@@ -42,14 +42,17 @@ insight:
 
 #category
 技术:
-    zh: 野生技术协会
-    en: Geek – Only for Love
+    zh: 技术存储罐
+    en: Remember it
     img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
 生活:
-    zh: 生活
-    en: live
+    zh: 生活万花筒
+    en: love life
     img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
 
 #tag
 悦读:
     img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+
+图集:
+    img: https://cdn.jsdelivr.net/gh/yremp/cdn@2.1.5/img/cover/(5).jpg.webp
