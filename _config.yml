@@ -44,18 +44,38 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
+#代码高亮
 highlight:
-  enable: true
+  enable: fales
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
+
+#npm i -S hexo-prism-plugin
+#插件代码高亮
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
+
 prismjs:
   enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
+
+#支持 emoji表情的生成，把对应的markdown emoji语法（::,例如：:smile:）转变成会跳跃的emoji表情
+#表情配置
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -116,3 +136,14 @@ backup:
   repository:
     github: https://github.com/kcalm-boy/kcalm-boy.github.io.git,backup
     coding: https://git.coding.net/kcalm-boy/kcalm-boy.git,backup
+
+#RSS订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date

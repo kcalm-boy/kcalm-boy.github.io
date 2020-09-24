@@ -50,7 +50,6 @@ homeArticleShown: 10
 bg:
   - https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg1.jpg
   - https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg2.jpg
-  - https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg3.jpg
   - https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg5.jpg
   - https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg6.jpg
   - https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg7.jpg
@@ -96,24 +95,27 @@ msocial:
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
+  enable: false  #这里是不允许放视频，可修改
   url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
   name: Unbroken.mp4
 
-aplayer: 
-  id: 2660651585
+
+aplayer:  ##媒体播放引擎，移动端会禁止自动播放
+  enable: false
+  id: 5250803632
   server: netease
   type: playlist
-  fixed: true
-  autoplay: false
-  loop: all
-  order: random
-  preload: auto
-  volume: 0.7
-  mutex: true
+  fixed: true ##开启吸底模式，固定到底部
+  autoplay: true ##音频自动播放
+  loop: all  ##音频循环播放, 可选值: 'all', 'one', 'none'
+  order: random ##音频循环顺序, 可选值: 'list', 'random'
+  preload: auto ##预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7 ##默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  mutex: true ##互斥，阻止多个播放器同时播放
+
 
 # Valine
 valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
-
+v_appId: aksMJEuA5ESaNc0jmGqk6keU-gzGzoHsz
+v_appKey: yBJamB2baMNg543Brt8Qd9vu

@@ -942,9 +942,9 @@ blockquote,q {
     quotes:"" ""
 }
 hr {
-    background-color:#ccc;
+    background-color:orange;
     border:0;
-    height:1px;
+    height:4px;
     margin-bottom:1.5em
 }
 ul,ol {
