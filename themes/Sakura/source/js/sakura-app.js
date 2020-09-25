@@ -972,6 +972,7 @@ function inlojv_js_getqqinfo () {
   })
 }
 
+// 评论里的诗，由来
 function get_poem (poem_ele, info_ele) {
   var poem = document.querySelector(poem_ele)
   var info = document.querySelector(info_ele)
