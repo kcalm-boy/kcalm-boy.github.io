@@ -4080,13 +4080,12 @@ li.feature-2 {
     width:38%;
     margin:auto;
     font-size:16px;
-    color:#eaeadf;
-    background:rgba(0,0,0,.25);
+    color: #696969;   /*首页字体颜色*/
+    background:rgba(255,255,255,.4);
     padding:15px;
     margin-top:22px;
     letter-spacing:0;
-    line-height:30px;
-    border-radius:10px;
+    line-height:30px;    border-radius:10px;
     box-sizing:initial;
     white-space:nowrap;
 }
@@ -4100,7 +4099,7 @@ li.feature-2 {
     margin-left:-15px;
     border-width:15px;
     border-style:solid;
-    border-color:transparent transparent rgba(0,0,0,.25) transparent
+    border-color:transparent transparent rgba(255,255,255,.4) transparent
 }
 .header-info p {
     margin:0;
@@ -4118,7 +4117,7 @@ li.feature-2 {
     height:35px;
     width:35px;
     padding:6px;
-    background:rgba(0,0,0,.4)
+    background:rgba(255,255,255,.25)
 }
 .top-social li {
     float:left;
