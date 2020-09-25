@@ -4078,15 +4078,15 @@ li.feature-2 {
 }
 /*改，社交栏背景那个长条*/
 .header-info {
-    width:38%;
+    width:43%;
     margin:auto;
     font-size:16px;
-    color: #696969;   /*首页字体颜色*/
-    background:rgba(255,255,255,.4);
+    color: #494949;   /*首页字体颜色*/
+    background:rgba(255,255,255,.5);
     padding:15px;
     margin-top:22px;
     letter-spacing:0;
-    line-height:30px;    border-radius:10px;
+    line-height:25px;    border-radius:10px;
     box-sizing:initial;
     white-space:nowrap;
 }
@@ -7742,7 +7742,7 @@ img[src*="#in-center"] {
 .poem-border {
     position:absolute;
     height:2px;
-    width:27%;
+    width:30%;
     background-color:#797979
 }
 .poem-right {
