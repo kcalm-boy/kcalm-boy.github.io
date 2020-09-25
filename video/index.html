@@ -48,7 +48,7 @@
   /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg1.jpg,https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg5.jpg,https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg9.jpg".split(",");
+  var bg = "https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg5.jpg,https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg9.jpg,https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg10.jpg".split(",");
   var bgindex = Math.floor(Math.random()*bg.length);
   if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
     alert('朋友，IE浏览器未适配哦~');
@@ -231,30 +231,12 @@
               </li>
             
               <li>
-                <a href="/">
+                <a href="/about/">
                   <span class="faa-parent animated-hover">
-                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    <i class="fa  fa-meetup" aria-hidden="true"></i>
                     关于
                   </span>
                 </a>
-                
-                  <ul class="sub-menu">
-                    
-                      <li>
-                        <a href="/about/">
-                          <i class="fa fa-meetup" aria-hidden="true"></i>
-                          我
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/theme-sakura/">
-                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
-                          主题
-                        </a>
-                      </li>
-                    
-                  </ul>
                 
               </li>
             
@@ -427,26 +409,37 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 kcalm-boy<br>
+
+      &copy; 2020 kcalm<br>
       powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer> -->
+
+
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
+
     <div class="footertext">
       <div class="img-preload">
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
       </div>
-      <p style="color: #666666;">&copy 2018</p>
-    </div>
-    <div class="footer-device">
-    <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
-        </span>
+      <!-- 页脚备注 kcalm 引用已经申明的变量-->
+      <p style="color: #666666;"> 
+      <!-- 中间插了一朵花，使用 <i>标签 -->
+        Copyright &copy; 2020 kcalm <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> Theme Sakura <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> <span id="runtime_span"></span>
       </p>
     </div>
+
+    <!-- 下面这个页脚在我的申明之下，我暂时感觉用不到，所以注释，但是语法可以参考 -->
+    <!--<div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura </a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
+        </span>
+      </p>
+    </div> -->
+
   </div><!-- .site-info -->
 </footer>
 
@@ -516,6 +509,25 @@ $(document).ready(function() {
 });
 </script>
 
+<!-- 网站运行天数 -->
+<script type="text/javascript">     
+    function show_runtime() {
+        window.setTimeout("show_runtime()", 1000);
+        X = new Date("09/24/2020 00:00:00");
+        Y = new Date();
+        T = (Y.getTime() - X.getTime());
+        M = 24 * 60 * 60 * 1000;
+        a = T / M;
+        A = Math.floor(a);
+        b = (a - A) * 24;
+        B = Math.floor(b);
+        c = (b - B) * 60;
+        C = Math.floor((b - B) * 60);
+        D = Math.floor((c - C) * 60);
+        runtime_span.innerHTML = "小破站残存: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+    }
+  show_runtime();
+</script>
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
         <div class="icon"></div>
@@ -582,30 +594,12 @@ $(document).ready(function() {
       </li>
     
       <li>
-        <a href="/">
+        <a href="/about/">
           <span class="faa-parent animated-hover">
-            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            <i class="fa  fa-meetup" aria-hidden="true"></i>
             关于
           </span>
         </a>
-        
-          <ul class="sub-menu">
-            
-              <li>
-                <a href="/about/">
-                  <i class="fa fa-meetup" aria-hidden="true"></i>
-                  我
-                </a>
-              </li>
-            
-              <li>
-                <a href="/theme-sakura/">
-                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
-                  主题
-                </a>
-              </li>
-            
-          </ul>
         
       </li>
     
