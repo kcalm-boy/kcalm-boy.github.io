@@ -1,6 +1,6 @@
   <div class="pattern-center-blank"></div>
   <% if (post.photos && post.photos.length){ %>
-    <div class="pattern-center ">
+    <div class="pattern-center-sakura">
       <div class="pattern-attachment-img">
         <img src="<%- theme.lazyloadImg%>" data-src="<%= post.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
       </div>
@@ -15,6 +15,9 @@
       <%- post.content %>
       <!-- .entry-content -->
       <%- partial('_partial/comment') %>
+        
+      <!-- 原本打赏部分 -->
+      
       <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
       <footer class="post-footer">
         <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>

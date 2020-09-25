@@ -1,50 +1,40 @@
+<!-- <footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+
+
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
+
     <div class="footertext">
       <div class="img-preload">
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
       </div>
-        <span style="color:#666666">Copyright © 2020</span>
-        <a style="color:#666666" href="https://lifepart.top/" target="_blank" rel="nofollow noopener">lifepart by kcalm</a>
-      </div>
-    <div class="footer-device">
-    <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">
-          <div>
-            <span id="timeDate">载入天数...</span>
-            <span id="times">载入时分秒...</span>
-            <script>
-            var now = new Date();
-            function createtime(){
-                var grt= new Date("09/23/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
-                now.setTime(now.getTime()+250);
-                days = (now - grt ) / 1000 / 60 / 60 / 24;
-                dnum = Math.floor(days);
-                hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
-                hnum = Math.floor(hours);
-                if(String(hnum).length ==1 ){
-                    hnum = "0" + hnum;
-                }
-                minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-                mnum = Math.floor(minutes);
-                if(String(mnum).length ==1 ){
-                          mnum = "0" + mnum;
-                }
-                seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-                snum = Math.round(seconds);
-                if(String(snum).length ==1 ){
-                          snum = "0" + snum;
-                }
-                document.getElementById("timeDate").innerHTML = " 小破站已经苟存了："+dnum+"天";  //此次自定义显示内容
-                document.getElementById("times").innerHTML = hnum + "小时" + mnum + "分" + snum + "秒";
-            }  //此次自定义显示内容
-            setInterval("createtime()",250);
-            </script>
-        </div>   
-        </span>
+      <!-- 页脚备注 <%= __('kcalm')%> 引用已经申明的变量-->
+      <p style="color: #666666;"> 
+      <!-- 中间插了一朵花，使用 <i>标签 -->
+        Copyright &copy; <%= date(new Date(), 'YYYY') %> <%= __('kcalm')%> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> Theme Sakura <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> <span id="runtime_span"></span>
       </p>
     </div>
+
+    <!-- 下面这个页脚在我的申明之下，我暂时感觉用不到，所以注释，但是语法可以参考 -->
+    <!--<div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura </a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
+        </span>
+      </p>
+    </div> -->
+
   </div><!-- .site-info -->
 </footer>
 
@@ -114,3 +104,22 @@ $(document).ready(function() {
 });
 </script>
 
+<!-- 网站运行天数 -->
+<script type="text/javascript">     
+    function show_runtime() {
+        window.setTimeout("show_runtime()", 1000);
+        X = new Date("09/24/2020 00:00:00");
+        Y = new Date();
+        T = (Y.getTime() - X.getTime());
+        M = 24 * 60 * 60 * 1000;
+        a = T / M;
+        A = Math.floor(a);
+        b = (a - A) * 24;
+        B = Math.floor(b);
+        c = (b - B) * 60;
+        C = Math.floor((b - B) * 60);
+        D = Math.floor((c - C) * 60);
+        runtime_span.innerHTML = "小破站残存: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+    }
+  show_runtime();
+</script>

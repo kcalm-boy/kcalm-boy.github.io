@@ -1,10 +1,10 @@
 ---
 title: about
 date: 2018-12-12 22:14:36
-keywords: 关于
+keywords:
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/about.jpg
+photos: https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bglove.jpg
 ---
 {% raw %}
 <!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->
@@ -16,13 +16,10 @@ photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/about.jpg
     <p>
     </p>
     <h4>
-    与&nbsp;<ruby>
+     与 &nbsp;<ruby>
     kcalm&nbsp;<rp>
-    （</rp>
-    <rt style="color:blue">
-   他的秘密基地</rt>
-    <rp>
-    ）</rp>
+    	<rt style="color:#FF69B4">老实人</rt>
+    </rp>
     </ruby>
     对话中...</h4>
     <p>

@@ -75,5 +75,27 @@
   </style>
   <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
   </style>
-  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/hititle.js"></script>"></script>
+
+  <script type="text/javascript">
+  // 浏览器搞笑标题
+  var OriginTitle = document.title;
+  var titleTime;
+  document.addEventListener('visibilitychange', function () {
+    if (location.href != "https://www.lifepart.top/"){//主页不变
+      if (document.hidden) {
+        //$('[rel="icon"]').attr('href', "/funny.ico");
+        document.title = 'w(ﾟДﾟ)w 你又走失了!';
+        clearTimeout(titleTime);
+      }else {
+        // $('[rel="icon"]').attr('href', "/favicon.ico");
+        // document.title = '(ฅ>ω<*ฅ) 噫找到你啦~'；
+        // 下面两行注释为kcalm改动
+        document.title = '(๑> ₃ <) 噫! 找到你啦~';
+        titleTime = setTimeout(function () {
+          document.title = OriginTitle;
+        }, 2000);
+      }
+    }
+  });
+  </script>
 </head>

@@ -5,9 +5,9 @@
 # Site
 title: 心から愛する
 subtitle: ''
-description: '生活树洞，学习笔记'
+description: '一面技术，一面生活'
 keywords:
-author: kcalm-boy
+author: kcalm
 language: en
 timezone: ''
 
@@ -15,7 +15,14 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: http://lifepart.top
 root: /
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: articles/:abbrlink/
+# abbrlink config
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: dec    # 进制：dec(default) and hex
+
+
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -131,7 +138,7 @@ deploy:
 # backup
 backup:
   type: git
-  theme: sakura
+  theme: Sakura
   message: backup my blog of https://kcalm-boy.github.io/
   repository:
     github: https://github.com/kcalm-boy/kcalm-boy.github.io.git,backup
@@ -147,3 +154,32 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+
+#文件压缩
+# html_minifier:
+#   enable: true
+#   ignore_error: false
+#   exclude:
+
+# css_minifier:
+#   enable: true
+#   exclude:
+#     - '*.min.css'
+
+# js_minifier:
+#   enable: true
+#   mangle: true
+#   output:
+#   compress:
+#   exclude:
+#     - '*.min.js'
+
+# image_minifier:
+#   enable: true
+#   interlaced: false
+#   multipass: false
+#   optimizationLevel: 2
+#   pngquant: false
+#   progressive: false
+
