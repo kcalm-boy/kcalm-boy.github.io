@@ -1230,6 +1230,7 @@ a:hover,a:active {
     overflow:hidden;
     margin:0 auto
 }
+/*改，导航栏到顶后的颜色*/
 .pattern-center-blank {
     padding-top:75px;
     background-color:#fff
@@ -5793,10 +5794,11 @@ button.botui-actions-buttons-button {
     padding-top:11px;
     text-decoration-line:none
 }
+/*改，页面左上角logo字体*/
 .logolink .sakurasono {
     background-color:rgba(255,255,255,.5);
     border-radius:5px;
-    color:#464646;
+    color:#fff;
     height:auto;
     line-height:25px;
     margin-right:0;
@@ -5805,6 +5807,7 @@ button.botui-actions-buttons-button {
     text-size-adjust:100%;
     width:auto
 }
+/*改，字体遮罩，第一个那个字*/
 .logolink a:hover .sakurasono {
     background-color:orange;
     color:#fff
@@ -5812,8 +5815,9 @@ button.botui-actions-buttons-button {
 .logolink a:hover .shironeko,.logolink a:hover rt {
     color:orange
 }
+/*改，那个shironeko对应颜色*/
 .logolink.moe-mashiro a {
-    color:#464646;
+    color:#fff;
     float:left;
     font-size:28px;
     font-weight:800;
