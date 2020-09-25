@@ -7729,7 +7729,7 @@ img[src*="#in-center"] {
 .poem-wrap p {
     width:70%;
     margin:auto;
-    line-height:30px;
+    line-height:100px;
     color:#797979
 }
 .poem-wrap p#poem {
