@@ -2,7 +2,7 @@
 layout: links
 title: links
 date: 2020-9-23
-keywords: 友人帐
+keywords:
 description: 
 comments: true
 photos: https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/BgPic/bg_links.jpg
