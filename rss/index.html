@@ -281,11 +281,11 @@
       <!-- .entry-content -->
       
     <div id="vcomments"></div>
-    <script src="https://unpkg.com/valine/dist/Valine.min.js"></script><!-- 最新版 -->
+    <script src="/js/Valine.min.js"></script><!-- 最新版 -->
     <style> 
     #vcomments textarea {
         box-sizing: border-box;
-        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+        background: url("https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp") 100% 100% no-repeat;
     }
     </style>
     <script>
@@ -295,18 +295,24 @@
             boolean: true,
             appId: 'c9SfklyKobbXOYmewmdds4jF-MdYXbMMI',
             appKey: 'H0F7GCJoWywWA67Mn61NBeG6',
-            //notify: '' === 'true',
-            //verify: '' === 'true',
+            meta : ['nick','mail','link'],  //调整需要填写的选项，默认值:['nick','mail','link']
+            placeholder: '来呀！你想说什么呢',
+            requiredFields: ['nick'],  //设置必填项
             visitor: 'true' === 'true',
             avatar: 'monsterid',
-            //pageSize: '10',
+            tagMeta : ["博主","小伙伴","访客"],
+            master : ["0173939703d787032a8cffc288b046dc"],
+
+            //notify: '' === 'true',
+            //verify: '' === 'true',
+            //pageSize: '',
             //lang: 'en',
-            placeholder: '填写QQ号就能评论，快来一发吧~',
-            //requiredFields: ['nick','mail'], //设置必填项
-            // 设置Bilibili表情包地址
-            emojiCDN: 'https://cdn.jsdelivr.net/gh/ccjpro/storage/emofaces/',
+           
+
+            // 自定义表情包
+            //emojiCDN: 'https://cdn.jsdelivr.net/gh/ccjpro/storage/emofaces/',
             // 表情title和图片映射
-            emojiMaps: {
+            /*emojiMaps: {
                     "tv2": "[tv_doge].png",
                     "tv3": "[tv_亲亲].png",
                     "tv4": "[tv_偷笑].png",
@@ -342,7 +348,7 @@
                     "tv34": "[tv_生病].png",
                     "tv35": "[tv_疑问].png",
                     "tv36": "[tv_白眼].png"
-}
+}*/
         });
     </script>
 

@@ -5043,6 +5043,8 @@ i.iconfont.js-toggle-search.iconsearch {
 .works-entry {
     margin-bottom:20px
 }
+
+/*改,滑动条样式*/
 }::-webkit-scrollbar {
     width:6px;
     height:6px;
@@ -7840,4 +7842,51 @@ td.hljs-ln-numbers {
 
 @media(max-width:1200px) {
     .toc {display: none;}
+}
+
+
+/*新添评论区样式*/
+/*昵称，邮箱，网站样式*/
+#vcomments .vheader .vnick {
+      width: 30%;
+      border: 2px solid #dedede;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px
+}
+
+#vcomments .vheader .vmail {
+      width: 30%;
+      border: 2px solid #dedede;
+      margin-left: 34px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px
+}
+
+#vcomments .vheader .vlink {
+      width: 30%;
+      border: 2px solid #dedede;
+      margin-left: 34px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px
+}
+
+/*评论区卡片式背景*/
+#vcomments .vcards .vcard {
+	padding: 15px 20px 0 20px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+	transition: all .3s
+}
+
+#vcomments .vcards .vcard:hover {
+	box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+}
+
+#vcomments .vcards .vcard .vh .vcard {
+	border: none;
+	box-shadow: none;
 }
