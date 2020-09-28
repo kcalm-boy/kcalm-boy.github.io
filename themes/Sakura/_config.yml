@@ -115,15 +115,29 @@ aplayer:  ##媒体播放引擎，移动端会禁止自动播放
   mutex: true ##互斥，阻止多个播放器同时播放
 
 
-# #Valine
+#Valine
 # valine: true
 # v_appId: aksMJEuA5ESaNc0jmGqk6keU-gzGzoHsz
 # v_appKey: yBJamB2baMNg543Brt8Qd9vu
 
-valine: 
-   appid: aksMJEuA5ESaNc0jmGqk6keU-gzGzoHsz  #Leancloud应用的appId
-   appkey: yBJamB2baMNg543Brt8Qd9vu  #Leancloud应用的appKey
-   verify: false #验证码
-   notify: false #评论回复提醒
-   avatar: retro #评论列表头像类型可见： https://valine.js.org/avatar.html
-   placeholder: Just go go #评论框占位符
+
+
+ 
+
+# Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
+valine:
+  enable: true
+  appId: c9SfklyKobbXOYmewmdds4jF-MdYXbMMI
+  appKey: H0F7GCJoWywWA67Mn61NBeG6
+  visitor: true
+  avatar: 'monsterid'  # 默认头像展示方式，小怪物
+  # pageSize: 10
+  placeholder: '来呀！你想说什么呢' # Comment Box placeholder  # 评论区默认的语句
+  enableQQ : true # 强制QQ
+  background: https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp #输入框提示动画
+  
+
+
+libs:
+  js:
+    valine: /js/Valine.min.js   #让他不在更新，因为添加了，访客和博主
