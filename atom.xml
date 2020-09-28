@@ -6,7 +6,7 @@
   <link href="http://lifepart.top/atom.xml" rel="self"/>
   
   <link href="http://lifepart.top/"/>
-  <updated>2020-09-18T06:41:57.501Z</updated>
+  <updated>2020-09-28T08:49:14.682Z</updated>
   <id>http://lifepart.top/</id>
   
   <author>
@@ -18,17 +18,21 @@
   
   <entry>
     <title>新的篇章</title>
-    <link href="http://lifepart.top/articles/undefined/"/>
-    <id>http://lifepart.top/articles/undefined/</id>
+    <link href="http://lifepart.top/articles/1096284067/"/>
+    <id>http://lifepart.top/articles/1096284067/</id>
     <published>2020-09-17T14:00:31.000Z</published>
-    <updated>2020-09-18T06:41:57.501Z</updated>
+    <updated>2020-09-28T08:49:14.682Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;​   </summary>
+    <summary type="html">&lt;p&gt;​    这是一个测试博客&lt;/p&gt;
+&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if</summary>
         
       
     
@@ -41,10 +45,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://lifepart.top/articles/undefined/"/>
-    <id>http://lifepart.top/articles/undefined/</id>
+    <link href="http://lifepart.top/articles/1243066710/"/>
+    <id>http://lifepart.top/articles/1243066710/</id>
     <published>2020-09-15T13:06:30.210Z</published>
-    <updated>2020-09-15T13:06:30.210Z</updated>
+    <updated>2020-09-28T08:49:14.681Z</updated>
     
     
       
