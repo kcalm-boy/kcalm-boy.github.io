@@ -6,7 +6,7 @@
   <link href="http://lifepart.top/atom.xml" rel="self"/>
   
   <link href="http://lifepart.top/"/>
-  <updated>2020-09-28T08:49:14.682Z</updated>
+  <updated>2020-09-28T08:49:14.681Z</updated>
   <id>http://lifepart.top/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>新的篇章</title>
-    <link href="http://lifepart.top/articles/1096284067/"/>
-    <id>http://lifepart.top/articles/1096284067/</id>
-    <published>2020-09-17T14:00:31.000Z</published>
-    <updated>2020-09-28T08:49:14.682Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​    这是一个测试博客&lt;/p&gt;
-&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if</summary>
-        
-      
-    
-    
-    
-    
-    <category term="新的篇章" scheme="http://lifepart.top/tags/%E6%96%B0%E7%9A%84%E7%AF%87%E7%AB%A0/"/>
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
