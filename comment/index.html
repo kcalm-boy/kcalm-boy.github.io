@@ -91,8 +91,9 @@
   <a href="#" class="cd-top faa-float animated"></a>
   <section id="main-container">
     <div class="headertop filter-dot">
-  <div id="banner_wave_1"></div>
-  <div id="banner_wave_2"></div>
+  <!-- 注释掉首页波浪条纹-->
+  <!--<div id="banner_wave_1"></div> -->
+  <!--<div id="banner_wave_2"></div> -->
   <figure id="centerbg" class="centerbg">
     <div class="focusinfo no-select">
       <div class="header-tou">
@@ -321,80 +322,19 @@
       </script>
       <!-- .entry-content -->
       
-    <div id="vcomments"></div>
-    <script src="/js/Valine.min.js"></script> 
-    <style> 
-    #vcomments textarea {
-        box-sizing: border-box;
-        background: url("https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp") 100% 100% no-repeat;
-    }
-    </style>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            enableQQ: true,
-            boolean: true,
-            appId: c9SfklyKobbXOYmewmdds4jF-MdYXbMMI,
-            appKey: H0F7GCJoWywWA67Mn61NBeG6,
-            meta : ['nick','mail','link'],  //调整需要填写的选项，默认值:['nick','mail','link']
-            placeholder: '来呀！你想说什么呢',
-            requiredFields: ['nick'],  //设置必填项
-            visitor: 'true' === 'true',
-            avatar: 'monsterid',
-            tagMeta : ["博主","小伙伴","访客"],
-            master : ["0173939703d787032a8cffc288b046dc"],
-            friends: ["cead422dc29ec7a5"],
-
-            //notify: '' === 'true',
-            //verify: '' === 'true',
-            //pageSize: '',
-            //lang: 'en',
-           
-
-            // 自定义表情包
-            //emojiCDN: 'https://cdn.jsdelivr.net/gh/ccjpro/storage/emofaces/',
-            // 表情title和图片映射
-            /*emojiMaps: {
-                    "tv2": "[tv_doge].png",
-                    "tv3": "[tv_亲亲].png",
-                    "tv4": "[tv_偷笑].png",
-                    "tv5": "[tv_再见].png",
-                    "tv6": "[tv_冷漠].png",
-                    "tv7": "[tv_发怒].png",
-                    "tv8": "[tv_发财].png",
-                    "tv9": "[tv_可爱].png",
-                    "tv10": "[tv_吐血].png",
-                    "tv11": "[tv_呆].png",
-                    "tv12": "[tv_呕吐].png",
-                    "tv13": "[tv_困].png",
-                    "tv14": "[tv_坏笑].png",
-                    "tv15": "[tv_大佬].png",
-                    "tv16": "[tv_大哭].png",
-                    "tv17": "[tv_委屈].png",
-                    "tv18": "[tv_害羞].png",
-                    "tv19": "[tv_尴尬].png",
-                    "tv20": "[tv_微笑].png",
-                    "tv21": "[tv_思考].png",
-                    "tv22": "[tv_惊吓].png",
-                    "tv23": "[tv_打脸].png",
-                    "tv24": "[tv_抓狂].png",
-                    "tv25": "[tv_抠鼻].png",
-                    "tv26": "[tv_斜眼笑].png",
-                    "tv27": "[tv_无奈].png",
-                    "tv28": "[tv_晕].png",
-                    "tv29": "[tv_流汗].png",
-                    "tv30": "[tv_流泪].png",
-                    "tv31": "[tv_流鼻血].png",
-                    "tv32": "[tv_点赞].png",
-                    "tv33": "[tv_生气].png",
-                    "tv34": "[tv_生病].png",
-                    "tv35": "[tv_疑问].png",
-                    "tv36": "[tv_白眼].png"
-}*/
-        });
-    </script>
-
-
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "c9SfklyKobbXOYmewmdds4jF-MdYXbMMI",
+        appKey: "H0F7GCJoWywWA67Mn61NBeG6",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
 
         
       <!-- 原本打赏部分 -->
@@ -700,7 +640,7 @@ $(document).ready(function() {
 </style>
 <meting-js
 
-    enable="false"
+    enable="true"
 
     id="5250803632"
 
@@ -721,6 +661,8 @@ $(document).ready(function() {
     volume="0.7"
 
     mutex="true"
+
+    lrctype="3"
 
 </meting-js>
 <script>

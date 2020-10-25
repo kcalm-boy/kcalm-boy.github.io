@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">lab | 心から愛する</title>
+  <title itemprop="name">神经网络和卷积神经网络 | 心から愛する</title>
   
     <link rel="shortcut icon" href="/images/boy.ico">
   
@@ -256,21 +256,32 @@
   </div>
 </header>
 
-        <div class="pattern-center-blank"></div>
-  
-    <div class="pattern-center-sakura">
-      <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/lab.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-      </div>
-      <header class="pattern-header ">
-        <h1 class="entry-title">
-        Lab实验室</h1>
-      </header>
-    </div>
-  
-  <div id="content" class="site-content">
-    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      <h2 id="sakura主题"><a href="#sakura主题" class="headerlink" title="sakura主题"></a>sakura主题</h2><p>balabala</p>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">神经网络和卷积神经网络</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2020-10-21&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <p>​        神经网络和卷积神经网络虽然很像，但不是一个东西。最近在看吴恩达视频说，卷积神经网络能够自带避免过拟合，自带避免过拟合原因是它的参数数量，比神经网络参数数量要少很多。为何要少很多呢？有什么例子？</p>
+<p>​        在神经网络中，识别一幅图片是怎么操作？过程如下图。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/Posts_img/神经网络和卷积神经网络/神经网络识别一只猫.png" alt="神经网络识别一只猫"></p>
+<p>​        可以看到，神经网络识别一个图片，需要将图片所有的像素排列成一行，然后进行输入。假设五层网络为12288   20    70    5   1。则参数数量如下：</p>
+<p>​                                    $\ W^1$  = [20, 12288]      $\ W^2$ =[70 ,20]       $\ W^3$=[5, 70]     $\ W^4$=[1, 5]</p>
+<p>​                                      $\ b_1$ = [20, 1]                  $\ b_2$=[70,1]               $\ b_3$=[5, 1]          $\ b_4$=[1,1]</p>
+<p>在第一层中，由于输入时所有像素点，所以参数数量很大。对于图像而言，计算量更大，参数更多。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -290,38 +301,101 @@
             document.body.appendChild(img);
           });
       </script>
-      <!-- .entry-content -->
-      
-        
-      <!-- 原本打赏部分 -->
-      
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-      <footer class="post-footer">
-        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-        <div class="post-tags">
         </div>
-        <div class="post-share">
-          <div class="social-share sharehidden share-component"></div>
-          <i class="iconfont show-share icon-forward"></i>
-        </div>
-      </footer><!-- .entry-footer -->
-    </article>
+        <!-- .entry-content -->
+
+        <!-- 原本打赏部分 -->
+
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
       <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/articles/3/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                </h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/articles/1243066710/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Hello World</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "c9SfklyKobbXOYmewmdds4jF-MdYXbMMI",
+        appKey: "H0F7GCJoWywWA67Mn61NBeG6",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/headPic/boy.jpg" itemprop="image" alt="kcalm" height="70" width="70"></a>
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a target="_blank" href="https://www.lifepart.top/" itemprop="url" rel="author noopener">kcalm</a>
+            <a href="" itemprop="url" rel="author"></a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>一面技术，一面生活</p>
+        <p><i class="iconfont icon-write"></i></p>
       </section>
+    </main><!-- #main -->
   </div><!-- #primary -->
 </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
