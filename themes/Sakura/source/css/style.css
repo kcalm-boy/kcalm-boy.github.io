@@ -7874,7 +7874,7 @@ td.hljs-ln-numbers {
 }
 
 /*评论区卡片式背景*/
-#vcomments .vcards .vcard {
+/*#vcomments .vcards .vcard {
 	padding: 15px 20px 0 20px;
 	border-radius: 10px;
 	margin-bottom: 15px;
@@ -7889,4 +7889,4 @@ td.hljs-ln-numbers {
 #vcomments .vcards .vcard .vh .vcard {
 	border: none;
 	box-shadow: none;
-}
+}*/

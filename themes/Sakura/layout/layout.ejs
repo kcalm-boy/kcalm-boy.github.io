@@ -5,7 +5,10 @@
   <a href="#" class="cd-top faa-float animated"></a>
   <section id="main-container">
     <%- partial('_partial/headertop', null, {cache: !config.relative_link}) %>
-    <div id="page" class="site wrapper">
+
+    <!-- 增加背景 -->
+    <div id="page" class="site wrapper" style="background: url(https://cdn.jsdelivr.net/gh/kcalm-boy/ImgHosting/kcalm-Pic/Posts_img/BgPic/dark1.jpg) ; background-size:100% 100% ; background-attachment: fixed">
+    
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <%- body %>
     </div>    

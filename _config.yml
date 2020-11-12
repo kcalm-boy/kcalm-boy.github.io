@@ -155,6 +155,10 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
+#文章渲染公式
+math:
+  engine: 'mathjax' # or 'katex'
+  mathjax:
 
 #文件压缩
 # html_minifier:
