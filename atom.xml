@@ -6,7 +6,7 @@
   <link href="http://lifepart.top/atom.xml" rel="self"/>
   
   <link href="http://lifepart.top/"/>
-  <updated>2020-10-25T12:22:39.876Z</updated>
+  <updated>2020-11-12T13:33:50.417Z</updated>
   <id>http://lifepart.top/</id>
   
   <author>
@@ -17,33 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://lifepart.top/articles/3/"/>
-    <id>http://lifepart.top/articles/3/</id>
-    <published>2020-10-22T05:43:07.329Z</published>
-    <updated>2020-10-25T12:22:39.876Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;tle: Sakura主题修改&lt;br&gt;tags: 主题修改&lt;br&gt;comments: true&lt;br&gt;abbrlink: 2714463474&lt;/p&gt;
-&lt;h1 id=&quot;1、去首页波浪条纹&quot;&gt;&lt;a href=&quot;#1、去首页波浪条纹&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>神经网络和卷积神经网络</title>
     <link href="http://lifepart.top/articles/2685917937/"/>
     <id>http://lifepart.top/articles/2685917937/</id>
     <published>2020-10-21T01:56:58.000Z</published>
-    <updated>2020-10-22T07:29:06.063Z</updated>
+    <updated>2020-11-12T13:33:50.417Z</updated>
     
     
       
@@ -59,27 +37,6 @@
     
     
     <category term="吴恩达 机器学习" scheme="http://lifepart.top/tags/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://lifepart.top/articles/1243066710/"/>
-    <id>http://lifepart.top/articles/1243066710/</id>
-    <published>2020-09-15T13:06:30.210Z</published>
-    <updated>2020-09-28T08:49:14.681Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
